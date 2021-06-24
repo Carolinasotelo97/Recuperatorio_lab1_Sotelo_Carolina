@@ -20,7 +20,7 @@ int listarMarcas(eMarca marcas[],int tamM)
         printf("  ID       COLOR\n");
         for(int i=0;i<tamM;i++)
         {
-            mostrarColor(marcas[i]);
+            mostrarMarca(marcas[i]);
             retorno=0;
         }
     }
@@ -28,12 +28,12 @@ int listarMarcas(eMarca marcas[],int tamM)
     return retorno;
 }
 
-void mostrarColor(eMarca marcas)
+void mostrarMarca(eMarca marcas)
 {
     printf(" %d %10s\n",marcas.id,marcas.desc);
 }
 
-int validarColor(eMarca marcas[],int tamC,int id)
+int validarMarca(eMarca marcas[],int tamC,int id)
 {
 
     int retorno=-1;
@@ -50,7 +50,7 @@ int validarColor(eMarca marcas[],int tamC,int id)
 
 }
 
-int cargarDescColor(char str[],eMarca marcas[],int tamC,int id)
+int cargarDescMarca(char str[],eMarca marcas[],int tamC,int id)
 {
     int retorno=-1;
 

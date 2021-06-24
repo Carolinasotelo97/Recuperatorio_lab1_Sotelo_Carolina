@@ -12,7 +12,7 @@
 #include <string.h>
 
 
-int listarrodados(eRodado rodados[],int tamR)
+int listarRodados(eRodado rodados[],int tamR)
 {
     int retorno=-1;
 
@@ -21,7 +21,7 @@ int listarrodados(eRodado rodados[],int tamR)
         printf("  ID       rodados\n");
         for(int i=0;i<tamR;i++)
         {
-            mostrarTipo(rodados[i]);
+            mostrarRodado(rodados[i]);
             retorno=0;
         }
     }
@@ -29,12 +29,12 @@ int listarrodados(eRodado rodados[],int tamR)
     return retorno;
 }
 
-void mostrarTipo(eRodado tipo)
+void mostrarRodado(eRodado tipo)
 {
     printf(" %d %10s\n",tipo.id,tipo.desc);
 }
 
-int validarTipo(eRodado rodados[],int tamR,int id)
+int validarRodado(eRodado rodados[],int tamR,int id)
 {
 
     int retorno=-1;
@@ -51,7 +51,7 @@ int validarTipo(eRodado rodados[],int tamR,int id)
 
 }
 
-int cargarDescTipo(char str[],eRodado rodados[],int tamR,int id)
+int cargarDescRodado(char str[],eRodado rodados[],int tamR,int id)
 {
     int retorno=-1;
 

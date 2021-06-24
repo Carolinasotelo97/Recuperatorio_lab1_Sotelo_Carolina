@@ -5,11 +5,11 @@
  *      Author: caroo
  */
 
-#include "trabajos.h"
-#include "servicio.h"
 
 #ifndef BICI_H_
 #define BICI_H_
+#include "trabajos.h"
+#include "servicio.h"
 
 typedef struct
 {
